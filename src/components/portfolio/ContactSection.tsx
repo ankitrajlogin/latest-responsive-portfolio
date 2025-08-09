@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Facebook } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -21,8 +21,14 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    alert('Currently this feature is disabled due to lots of false messages.');
+    // Clear the form here
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
   };
 
   const contactInfo = [
@@ -50,19 +56,19 @@ const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/ankitrajlogin",
       color: "hover:text-white"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/ankitrajlogin/",
       color: "hover:text-blue-400"
     },
     {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com",
+      icon: Facebook,
+      label: "Facebook",
+      href: "https://www.facebook.com/rio.de.1217/",
       color: "hover:text-blue-400"
     }
   ];

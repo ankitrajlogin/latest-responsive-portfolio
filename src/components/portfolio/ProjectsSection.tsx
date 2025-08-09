@@ -2,6 +2,10 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import alumninetImg from '@/assets/alumninet.png';
+import realTimeChatApplicatin from '@/assets/realtimechat.png';
+import cryptoHunterImg from '@/assets/cryptohunter.png';
+import agriVisionImg from '@/assets/agriVision.png';
 
 const ProjectsSection = () => {
   const [ref, inView] = useInView({
@@ -12,32 +16,32 @@ const ProjectsSection = () => {
   const projects = [
   {
     id: 1,
-    title: "MERN App Store Platform",
-    description: "A full-stack MERN-based application store where users can browse, search, and download apps with integrated authentication, ratings, and reviews.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=book",
-    tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT Auth"],
-    liveUrl: "https://example.com", // Replace with actual deployed link
-    githubUrl: "https://github.com", // Replace with actual repo link
+    title: "AlumniNet",
+    description: "A comprehensive platform designed to connect alumni, current students, and their alma mater by fostering meaningful professional and community engagement. Features include alumni networking, career resources, mentorship, event management, and knowledge sharing to support professional growth and reconnecting with peers.",
+    image: alumninetImg,
+    tech: ["MongoDB", "Express.js", "React", "Node.js", "UX Design"],
+    liveUrl: "https://alumninet.example.com",
+    githubUrl: "https://github.com/ankitrajlogin",
     featured: true
   },
   {
     id: 2,
-    title: "Agro Assistance Platform",
+    title: "AgriVision",
     description: "An AI-powered platform for farmers with crop recommendations, plant disease detection, fertilizer suggestions, and pest identification using ML models.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+    image: agriVisionImg,
     tech: ["Python", "TensorFlow", "React", "Node.js", "Flask API"],
     liveUrl: "https://example.com", // Replace with actual deployed link
-    githubUrl: "https://github.com", // Replace with actual repo link
+    githubUrl: "https://github.com/ankitrajlogin", // Replace with actual repo link
     featured: true
   },
   {
     id: 3,
     title: "Real-Time Chat Application",
     description: "A scalable chat application with features like file sharing, emoji reactions, and group management.",
-    image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=400&fit=chat",
+    image: realTimeChatApplicatin,
     tech: ["Next.js", "Socket.io", "MongoDB", "Redis", "Vercel"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/ankitrajlogin",
     featured: false
   },
   {
@@ -47,27 +51,28 @@ const ProjectsSection = () => {
     image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
     tech: ["React", "GraphQL", "PostgreSQL", "TypeScript", "AWS"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-    featured: false
-  },
-  {
-    id: 5,
-    title: "Fitness Tracking Mobile App",
-    description: "A React Native app for fitness enthusiasts with workout tracking, nutrition planning, and social features.",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
-    tech: ["React Native", "Firebase", "Node.js", "MongoDB", "Expo"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/ankitrajlogin",
     featured: false
   },
   {
     id: 6,
-    title: "Cryptocurrency Portfolio Tracker",
+    title: "Crypto Hunter",
     description: "A real-time crypto portfolio tracker with advanced charting, price alerts, and portfolio analytics.",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop",
+    image: cryptoHunterImg,
     tech: ["React", "Chart.js", "CoinGecko API", "Tailwind", "Vite"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/ankitrajlogin",
+    featured: false
+  },
+  
+  {
+    id: 7,
+    title: "MERN Bookstore Platform",
+    description: "A full-stack MERN-based application store where users can browse, search, and download apps with integrated authentication, ratings, and reviews.",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=book",
+    tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT Auth"],
+    liveUrl: "https://example.com", // Replace with actual deployed link
+    githubUrl: "https://github.com/ankitrajlogin", // Replace with actual repo link
     featured: false
   }
 ];
