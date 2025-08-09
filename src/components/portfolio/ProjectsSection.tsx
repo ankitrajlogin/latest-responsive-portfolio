@@ -139,14 +139,19 @@ const ProjectsSection = () => {
                   {/* Overlay Actions */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="flex gap-4">
-                      <Button size="sm" className="btn-hero-primary">
-                        <Play className="h-4 w-4 mr-2" />
-                        Demo
-                      </Button>
-                      <Button size="sm" className="btn-hero-secondary">
-                        <Github className="h-4 w-4 mr-2" />
-                        Code
-                      </Button>
+                      <a href ={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <Button size="sm" 
+                        className="btn-hero-primary">
+                          <Play className="h-4 w-4 mr-2" />
+                          Demo
+                        </Button>
+                      </a>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Button size="sm" className="btn-hero-secondary">
+                          <Github className="h-4 w-4 mr-2" />
+                          Code
+                        </Button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -174,15 +179,20 @@ const ProjectsSection = () => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-4">
-                    <Button variant="outline" size="sm" className="group/btn">
-                      <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:animate-pulse" />
-                      Live Demo
-                    </Button>
-                    <Button variant="outline" size="sm" className="group/btn">
-                      <Github className="h-4 w-4 mr-2 group-hover/btn:animate-pulse" />
-                      View Code
-                    </Button>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex">
+                      <Button variant="outline" size="sm" className="group/btn">
+                        <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:animate-pulse" />
+                        Live Demo
+                      </Button>
+                    </a>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex">
+                      <Button variant="outline" size="sm" className="group/btn">
+                        <Github className="h-4 w-4 mr-2 group-hover/btn:animate-pulse" />
+                        View Code
+                      </Button>
+                    </a>
                   </div>
+
                 </div>
               </motion.div>
             ))}
@@ -238,14 +248,18 @@ const ProjectsSection = () => {
                   </div>
                   
                   <div className="flex gap-2">
-                    <Button variant="ghost" size="sm" className="flex-1 group/btn">
-                      <ExternalLink className="h-3 w-3 mr-1 group-hover/btn:animate-pulse" />
-                      Demo
-                    </Button>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button variant="ghost" size="sm" className="flex-1 group/btn">
+                        <ExternalLink className="h-3 w-3 mr-1 group-hover/btn:animate-pulse" />
+                        Demo
+                      </Button>
+                  </a>
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
                     <Button variant="ghost" size="sm" className="flex-1 group/btn">
                       <Github className="h-3 w-3 mr-1 group-hover/btn:animate-pulse" />
                       Code
                     </Button>
+                  </a>
                   </div>
                 </motion.div>
               ))}
@@ -257,10 +271,17 @@ const ProjectsSection = () => {
             variants={itemVariants}
             className="text-center mt-16"
           >
-            <Button className="btn-hero-primary group">
-              <Github className="mr-2 h-5 w-5 group-hover:animate-spin" />
-              View All Projects on GitHub
-            </Button>
+            <a
+              href="https://github.com/ankitrajlogin?tab=repositories" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <Button className="btn-hero-primary group">
+                <Github className="mr-2 h-5 w-5 group-hover:animate-spin" />
+                View All Projects on GitHub
+              </Button>
+            </a>
           </motion.div>
         </motion.div>
       </div>
