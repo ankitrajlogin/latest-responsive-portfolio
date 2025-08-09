@@ -48,7 +48,7 @@ const ContactSection = () => {
       icon: MapPin,
       label: "Location",
       value: "Bengaluru, India",
-      href: "#"
+      href: "https://www.google.com/maps/place/Bengaluru,+India"
     }
   ];
 
