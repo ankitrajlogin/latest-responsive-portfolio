@@ -35,7 +35,7 @@ const AboutSection = () => {
     {
       icon: Code,
       title: "Industry Experience",
-      description: "Internships at Juspay & Accenture, now at Optum"
+      description: "Currently Working at Optum as SDE"
     },
     {
       icon: Zap,
@@ -88,7 +88,7 @@ const AboutSection = () => {
                 
                 <Button 
                   className="btn-hero-primary group"
-                  onClick={() => window.open('/resume_final.pdf', '_blank')}
+                  onClick={() => window.open('https://drive.google.com/file/d/11cvytJAhQ-1dGpPqRxe8UzqL2aleXu1F/view?usp=sharing', '_blank')}
                 >
                   <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
                   Download CV

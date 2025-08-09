@@ -101,7 +101,7 @@ const HeroSection = () => {
         >
           <Button 
             className="btn-hero-primary group"
-            onClick={() => window.open('/resume.pdf', '_blank')}
+            onClick={() => window.open('https://drive.google.com/file/d/11cvytJAhQ-1dGpPqRxe8UzqL2aleXu1F/view?usp=sharing', '_blank')}
           >
             <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
             View Resume
