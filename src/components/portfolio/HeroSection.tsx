@@ -63,7 +63,7 @@ const HeroSection = () => {
         >
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
             <span className="block">Ankit Raj</span>
-            <span className="block text-gradient">Developer</span>
+            <span className="block text-gradient text-4xl md:text-6xl lg:text-7xl">Developer</span>
           </h1>
         </motion.div>
 
